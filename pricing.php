@@ -23,13 +23,15 @@
             <![endif]-->
 </head>
 <body>
+			<A NAME="pricing"></a>		
+
 <div class="wrapper">
 <!-- Content -->
         <div class="content" id="pricing">
         	<section class="mac-bar">
             	<div class="container">
                 	<div class="row">
-                    	<div class="col-sm-12">
+                    	<div class="col-sm-12" style="background-color: #f5f5f5;">
                         	<h4>Email Pricing Plans</h4>
                    			 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  	 								ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                         </div>

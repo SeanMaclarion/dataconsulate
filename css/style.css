@@ -2,15 +2,14 @@
 	#googlemaps { 
   border-top: 1px solid #9a9072;
 
-  margin-top: 3070px;
+  margin-top: 4070px;
   height: 1000px; 
   width: 100%; 
   position:absolute; 
   top: 0; 
   left: 0; 
   z-index: -1; /* Set z-index to 0 as it will be on a layer below the contact form */
-} 	
-
+}
 html { margin:0;padding:0;border:0; }
 body, div, span, object, iframe, h1, , h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, article, aside, dialog, figure, footer, header, hgroup, nav, section, input { margin: 0; padding: 0;border: 0;}
 article, aside, dialog, figure, footer, header, hgroup, nav, section { display:block;  }

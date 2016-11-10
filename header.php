@@ -116,7 +116,6 @@
                 <span class="icon-bar"></span>
               </button>
 			  <a class="navbar-brand" id="logo" href="index.php"><img class="img-responsive" src="images/logo.png" alt="logo"/></a>
-			  <a href="#newsletter"><button type="button" class="btn btn-default" id="plans">Newsletter</button></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">

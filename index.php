@@ -13,7 +13,7 @@ require("header.php");
 						<img src="images/top-head.jpg" alt="Home Screen" style="margin-left: -400px !important">
 							<div class="carousel-caption">
 								<h1 style="font-size: 52px;">YOUR DATA. SECURED.</h1>								
-								<p><a class="btn btn-lg btn-primary" href="pricing.html" role="button">PRICING INFORMATION</a></p>
+								<p><a class="btn btn-lg btn-primary" href="index.php#pricing" role="button">PRICING INFORMATION</a></p>
 							</div>
 					</div>
 				</div>
@@ -108,6 +108,7 @@ require("header.php");
 			</div>
             </section>
 
+<?php require("pricing.php");?>
 <?php require("footer.php");?>
 
 

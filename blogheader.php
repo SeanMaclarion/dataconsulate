@@ -1,3 +1,22 @@
+<?php	
+if(isset($_SESSION["user"]))
+{
+	
+$temp = $_SESSION["user"];
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT user FROM blog_users WHERE user = '$temp'";
+$result = mysqli_query($conn, $sql);
+
+		
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -116,7 +135,6 @@
                 <span class="icon-bar"></span>
               </button>
 			  <a class="navbar-brand" id="logo" href="index.php"><img class="img-responsive" src="images/logo.png" alt="logo"/></a>
-			  <a href="#newsletter"><button type="button" class="btn btn-default" id="plans">Newsletter</button></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">

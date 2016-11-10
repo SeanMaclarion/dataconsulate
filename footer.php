@@ -16,89 +16,87 @@
                     </div>
                 </div>
             </div>
-            	<div class="container">
-                	<div class="row">
-                    	<div class="col-sm-6">
-         
+            
+<!--Div for google maps styling -->
+   <!-- Content -->
+        <div class="content">
+			<div class="brand-info">
+                	<div id="contact-form" class="container">
+                    	<div class="row">
+                        	<div class="col-sm-12">
+                            	<h2>We’d love to hear from you!</h2>
+                            </div>
                         </div>
-						<!---Newsletter------->
-						<?php $alertError = "" ?>
-						<div id="newsletter">
-							<form action="newsletter.php" method="post" onsubmit="return validate();">
-							<p id="error_para" ></p>
-							<span id="alertError"><?php echo $alertError;?></span>
-							<div class="form-horizontal">
-								<input type="text" name="first" class="form-control feeback-input" id="first" placeholder="*FIRST NAME">
-								<input type="text" name="last" class="form-control feeback-input" id="last" placeholder="*LAST NAME">
-								<input type="text" name="business" class="form-control feeback-input" id="business" placeholder="BUSINESS">
-								<input type="email" name="email" class="form-control feeback-input" id="email" placeholder="*EMAIL">
-								<input type="text" name="address1" class="form-control feeback-input" id="address1" placeholder="*ADDRESS 1">
-								<input type="text" name="address2" class="form-control feeback-input" id="address2" placeholder="ADDRESS 2">
-								<input type="text" name="city" class="form-control feeback-input" id="city" placeholder="*CITY">
-									<select type="text" id="sel1" name="state">
-										<option disabled selected>*STATE</option>
-										<option>AL</option>
-										<option>AK</option>
-										<option>AZ</option>
-										<option>AR</option>
-										<option>CA</option>
-										<option>CO</option>
-										<option>CT</option>
-										<option>DE</option>
-										<option>FL</option>
-										<option>GA</option>
-										<option>HI</option>
-										<option>ID</option>
-										<option>IL</option>
-										<option>IN</option>
-										<option>IA</option>
-										<option>KS</option>
-										<option>KY</option>
-										<option>LA</option>
-										<option>ME</option>
-										<option>MD</option>
-										<option>MA</option>
-										<option>MI</option>
-										<option>MN</option>
-										<option>MS</option>
-										<option>MO</option>
-										<option>MT</option>
-										<option>NE</option>
-										<option>NV</option>
-										<option>NH</option>
-										<option>NJ</option>
-										<option>NM</option>
-										<option>NY</option>
-										<option>NC</option>
-										<option>ND</option>
-										<option>OH</option>
-										<option>OK</option>
-										<option>OR</option>
-										<option>PA</option>
-										<option>RI</option>
-										<option>SC</option>
-										<option>SD</option>
-										<option>TN</option>
-										<option>TX</option>
-										<option>UT</option>
-										<option>VT</option>
-										<option>VA</option>
-										<option>WA</option>
-										<option>WV</option>
-										<option>WI</option>
-										<option>WY</option>
-									</select>
-														
-								<input type="text" name="zip" id="zip" placeholder="*ZIP">
-							
-								<input id="btn" class="btn btn-primary btn-default" type="submit" value="SUBMIT" name="submit_form">
-							</div>
-							</form>
-							
-						</div>
-					</div>
-                </div>
-            </div>
+                        
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-offset-3 form-info">
+                                 <form role="form" method="post" action="send_form_email.php">
+                                  <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input name="name" type="text" class="form-control" id="customer_name">
+                                  </div>
+                                  
+                                  <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input name="email" type="email" class="form-control" id="customer_email">
+                                  </div>
+                               
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input name="subject" type="text" class="form-control" id="subject">
+                                  </div>
+                                  <div class="form-group">
+                                  <label for="comment">Message</label>
+                                  <textarea name="comment" class="form-control" rows="5" id="comment"></textarea>
+                                  </div>
+                                  <button id="btn" class="btn btn-primary btn-block active" type="submit" value="SEND" name="submit">SEND</button>
+                                </form>
+								
+                            </div>
+                        </div>
+                       
+                    </div>
+              </div>
+			  <A NAME="contact"></a>
+<div id="googlemaps"></div>
+
+<!--Start Google Map API implementation -->
+<!-- Include the Google Maps API library - required for embedding maps -->
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBhRRXcnQR1UmpgwHri_IXQrFna0M7j31c&callback=initMap"></script>
+ 
+<script type="text/javascript">
+ 
+// The latitude and longitude of Cornerstone Services
+var position = [41.7365,-74.05];
+ 
+function showGoogleMaps() {
+ 
+    var latLng = new google.maps.LatLng(position[0], position[1]);
+ 
+    var mapOptions = {
+        zoom: 12, // initialize zoom level - the max value is 21
+		scrollwheel: false,
+		mapTypeControl: false,  
+		panControl: false,
+		zoomControl: false, 
+		scaleControl: false,
+		streetViewControl: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        center: latLng
+    };
+ 
+    map = new google.maps.Map(document.getElementById('googlemaps'),
+        mapOptions);
+ 
+    
+}
+ 
+google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+</script>
+<!--End google map API implementation -->
+<?php
+?>
+						
             <div class="footer-bottom">
             	<div class="container">
                 	<div class="row">
@@ -108,9 +106,10 @@
                     </div>
                 </div>
             </div>
-	</footer>
+
 	</div>
-	
+</div>
+</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/bootstrap.min.js"></script>

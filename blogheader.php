@@ -115,7 +115,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-			  <a class="navbar-brand" id="logo" href="http://www.dataconsulate.com/"><img class="img-responsive" src="images/logo.png" alt="logo"/></a>
+			  <a class="navbar-brand" id="logo" href="index.php"><img class="img-responsive" src="images/logo.png" alt="logo"/></a>
 			  <a href="#newsletter"><button type="button" class="btn btn-default" id="plans">Newsletter</button></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
@@ -123,7 +123,7 @@
 			  
                 <li><a href="index.php#features">Features</a></li>
                 <li><a href="blog.php?p=1"> Blog </a></li>
-                <li><a href="contact-us.php">Contact US</a></li>
+                <li><a href="index.php#contact">Contact US</a></li>
               </ul>
               
             </div>

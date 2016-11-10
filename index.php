@@ -22,7 +22,7 @@ require("header.php");
 		<?php require("features.php");?>		
 			<!------Logo Carousel------>
             <section class="logo-detail">
-				<h4>Current Users</h4>
+				<center><h4>Current Users</h4></center>
             <div id="newCarousel" class="carousel slide" data-ride="carousel">
 					
 					<!-- Indicators - carousel navigation buttons ---
@@ -107,7 +107,9 @@ require("header.php");
 						-->
 			</div>
             </section>
+
 <?php require("footer.php");?>
+
 
 </div>
 

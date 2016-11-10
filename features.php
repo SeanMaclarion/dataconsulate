@@ -98,16 +98,17 @@
     }
 
 </script>			
-			
+			<A NAME="features"></a>		
 </head>
 <body>
 <div class="wrapper">
 
        
         <!-- Content -->
-		
+
         <div class="content">
 		<h2 style="text-align:center; padding-top:10px; font-size:52px;">FEATURES</h2>
+
 			<div class="features-detail">
             	<div class="feature-info">
                 	<div class="container">

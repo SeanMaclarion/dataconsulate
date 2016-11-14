@@ -1,7 +1,7 @@
 <?php
 session_start();
 	session_destroy();
-	header("location: blog.php");
+	header("location: blog.php?p=1");
 ?>
 
  ?>

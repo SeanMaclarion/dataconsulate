@@ -1,6 +1,6 @@
 <?php
 require("connection.php");
-require("header.php");
+require("blogheader.php");
 require("sidebar.php");
 $id = $_GET['id'];
 $sql = "select * from blog_posts where id = $id";
@@ -9,6 +9,9 @@ $result = mysqli_query($conn, $sql);
 <head>
 <link rel="stylesheet" type="text/css" href="blog.css">
 </head>
+<div class="wrapper" style="overflow: auto;">
+<div class="content">
+
 <div id="blog">
 <?php
 
@@ -97,6 +100,8 @@ if(isset($_SESSION["user"]))
 					echo "<br><a href='edit_post.php?id=$id'><button>Edit Post</button></a><br>";
 				}
 ?>
+</div>
+</div>
 </div>
     </body>
 </html>

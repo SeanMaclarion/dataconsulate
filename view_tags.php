@@ -1,12 +1,18 @@
 <?php
 require("connection.php");
-require("header.php");
+require("blogheader.php");
 require("sidebar.php");
 $tags = $_GET['tags'];
 $sql = "select * from blog_posts where tags LIKE '%" . $tags . "%' ORDER BY postDate DESC, postTIME DESC";
 $result = mysqli_query($conn, $sql);
 ?>
+<head>
 <link rel="stylesheet" type="text/css" href="blog.css">
+</head>
+<div class="wrapper" style="overflow: auto;">
+<div class="content">
+
+<div id="blog">
 <?php
 $page=$_REQUEST['p'];
 $limit=3;
@@ -50,8 +56,8 @@ while($row=mysqli_fetch_array($query))
 			if ($result2)
 			{
 				$row2 = mysqli_fetch_row($result2);
-				$tags = $row2[0];
-				$tagsArray = explode(",",$tags);
+				$tags2 = $row2[0];
+				$tagsArray = explode(",",$tags2);
 			}
 			$index = 0;
 			$count = count($tagsArray);
@@ -86,6 +92,7 @@ function pagination($page,$num_page, $tags)
 }
 else
 {
+	echo($tags);
  echo'<li style="float:left;padding:5px;"><a href="view_tags.php?p='.$i.'&tags='.$tags.'">'.$i.'</a></li>';
 }
   }
@@ -103,3 +110,6 @@ echo "</div>";
 
 
 ?>
+</div>
+</div>
+</div>

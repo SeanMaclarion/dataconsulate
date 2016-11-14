@@ -20,7 +20,7 @@ require ("connection.php");
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
       if($count == 1) {
-        header("location: blog.php");
+        header("location: blog.php?p=1");
       }else {
          $error = "Your Login Name or Password is invalid";
       }

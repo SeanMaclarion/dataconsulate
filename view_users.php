@@ -1,9 +1,14 @@
 <?php
 require("connection.php");
-require("header.php");
+require("blogheader.php");
 require("sidebar.php");
 ?>
+<head>
 <link rel="stylesheet" type="text/css" href="blog.css">
+</head>
+<div class="wrapper" style="overflow: auto;">
+<div class="content">
+<div class="blog">
 <?php
 $user= $_GET['username'];
 $sql = "select * from blog_posts where username = '". $user ."' ORDER BY postDate DESC, postTIME DESC";
@@ -102,3 +107,6 @@ echo "</div>";
 
 
 ?>
+</div>
+</div>
+</div>

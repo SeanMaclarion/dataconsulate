@@ -42,7 +42,6 @@ require("sidebar.php");
 }
 </style>
 </head>
-<body onload="openNav()">
 
 <div class="wrapper" style="overflow: auto;">
 <div class="content">

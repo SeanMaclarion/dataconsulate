@@ -1,7 +1,7 @@
 
 <?php
 require("connection.php");
-require("header.php");
+require("blogheader.php");
 $id = $_GET['id'];
 $sql = "select * from blog_posts where id = $id";
 date_default_timezone_set('America/New_York');

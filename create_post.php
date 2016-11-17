@@ -1,6 +1,6 @@
 <?php
 require("connection.php");
-require("header.php");
+require("blogheader.php");
 $user = $_SESSION["user"];
 echo $user;
 date_default_timezone_set('America/New_York');

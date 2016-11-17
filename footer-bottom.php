@@ -1,5 +1,4 @@
 <footer>
-<div class="free-plan">
 <div class="content">
 
 <div class="footer-bottom">
@@ -12,6 +11,6 @@
                 </div>
             </div>
 			
-</div>
+
 </div>
 </footer>

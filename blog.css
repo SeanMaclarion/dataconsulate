@@ -2,7 +2,12 @@
 {
 	width: 100%;
 	float:left;
-
+	
+}
+#search
+{
+	width: 75%;
+	float:left;
 	
 }
 #sideBarButton
